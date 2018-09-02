@@ -76,7 +76,7 @@ CSS Flex 공부하기
 `flex-direction` 속성과 `flex-wrap` 속성을 `flex-flow`라는 축약 속성으로 합칠 수 있습니다.
 
 ```
-    flex-flow : row wrap;        
+    flex-flow : row wrap;
 ```
 
 ## flex 항목에 적용되는 속성들
@@ -103,7 +103,6 @@ flex 항목에 적용할 수 있는 속성은 다음과 같습니다.
 
 사진 flex_grow_1
 
-
 세번째 항목의 `flex-grow` 값을 `2`로 설정하고 나머지 3개의 항목을 `1`로 설정한다면 각 항목에 설정된 `flex-grow` 값의 비율에 따라 남은 공간이 분배됩니다. 각 항목의 `flex-grow` 비율이 `1:1:2:1`이 된다.
 
 ---
@@ -120,6 +119,9 @@ flex 항목에 적용할 수 있는 속성은 다음과 같습니다.
 ### 위의 3개의 항목 축약표현
 
 `flex-grow`, `flex-shrink`, and `flex-basis` 항목을 하나로 표현이 가능하다.
+
+순서는 위에 적어놓은 순서와 같다.
+`flex-grow`, `flex-shrink`, `flex-basis`
 
 ```
     flex: 1 1 auto;
