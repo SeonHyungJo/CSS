@@ -1,4 +1,4 @@
-# CSS_Flex
+# Chapter1 CSS_Flex_Basic
 
 CSS Flex 공부하기
 흔히 우리가 크기에 따라 비율로 조정을 하려고 %, vh등을 사용한다 그러나 사이즈에 따라 또 다르게 주어야 맞게 보여지기도 한다. 이에 flex를 사용하면 좀 더 유용하지 않을까? 하는 생각에 정리를 하면서 공부 하려고 한다.
@@ -124,8 +124,72 @@ flex 항목에 적용할 수 있는 속성은 다음과 같습니다.
 ```
     flex: 1 1 auto;
 ```
+
+---
+
+# Chapter2 CSS_Advanced
+
+## justify-content
+
+부모에 선언하는 `property`로써 `Main Axis`가 기준이 된다.
+하위의 `item`들을 `Main Axis`를 기준으로 정렬한다.
+
+1. flex-start : main start에 위치
+2. flex-end : main end에 위치
+3. center : 중앙정렬
+4. space-between : 시작선과 끝선에 margin을 주지 않고 일정하게 정렬
+5. space-space : item간에 **절반씩** 같은 크기의 margin을 준다.
+6. space-evenly : item간에 같은 크기의 margin을 준다.
+
+이후 사진 추가 6개
+
+## align-items
+
+부모에 선언하는 `property`로써 `Cross Axis`가 기준이 된다.
+하위의 `item`들을 `Cross Axis`를 기준으로 정렬한다.
+
+1. flex-start : cross start에 위치
+2. flex-end : cross end에 위치
+3. center : 중앙정렬
+4. stretch : cross start에서 cross end까지 길게 늘린다.
+5. baseline : text 하위 라인을 기준으로 정렬
+
+## align-content
+
+부모에 선언하는 `property`로써 `Cross Axis`가 기준이 된다.
+하위의 `item`들을 `Cross Axis`를 기준으로 정렬한다.
+
+**그러나** 여러줄일 경우에 사용하게 된다. 즉 `flex-wrap:wrap`일때 적용이 된다.
+
+`align-items`보다 우선 순위가 높다!!!
+
+1. flex-start : cross start에 위치
+2. flex-end : cross end에 위치
+3. center : 중앙정렬
+4. stretch : cross start에서 cross end까지 길게 늘린다.
+5. space-between : 시작선과 끝선에 margin을 주지 않고 일정하게 정렬
+6. space-space : item간에 **절반씩** 같은 크기의 margin을 준다.
+
+## align-self
+
+`items`에 선언하는 `property`로써 `Cross Axis`가 기준이 된다.
+자기자신 `item`을 `Cross Axis`를 기준으로 정렬한다.
+
+1. flex-start : cross start에 위치
+2. flex-end : cross end에 위치
+3. center : 중앙정렬
+4. stretch : cross start에서 cross end까지 길게 늘린다.
+5. baseline : text 하위 라인을 기준으로 정렬
+
+## order
+
+`order` 속성은 배치 순서를 제어하는 속성입니다.
+
+기본값은 `0`이며 `flex-direction` 속성의 방향을 기준으로 낮은 숫자를 먼저 배치하고 높은 숫자를 나중에 배치합니다.
+
 ---
 
 # 참고
 
 - [Flexbox의_기본_개념](https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Flexible_Box_Layout/Flexbox의_기본_개념)
+- [a-guide-to-flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
