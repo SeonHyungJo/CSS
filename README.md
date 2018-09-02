@@ -24,10 +24,13 @@ CSS Flex 공부하기
 
 `row`, `row-reverse`의 경우는 수직이 교차축이며, `column`, `column-reverse` 의 경우는 수평이 교차축에 해당하게 된다.
 
-사진
-사진
-사진
-사진
+![row](https://github.com/SeonHyungJo/CSS_Flex/blob/flex/src/img/direction_row.png?raw=true)
+
+![row-reverse](https://github.com/SeonHyungJo/CSS_Flex/blob/flex/src/img/direction_row_reverse.png?raw=true)
+
+![column](https://github.com/SeonHyungJo/CSS_Flex/blob/flex/src/img/direction_column.png?raw=true)
+
+![column-reverse](https://github.com/SeonHyungJo/CSS_Flex/blob/flex/src/img/direction_colomn_reverse.png?raw=true)
 
 ---
 
@@ -53,13 +56,15 @@ CSS Flex 공부하기
 - `flex-basis` 속성은 `auto`로 지정됩니다.
 - `flex-wrap` 속성은 `nowrap`으로 지정됩니다.
 
+![row-reverse](https://github.com/SeonHyungJo/CSS_Flex/blob/flex/src/img/flex_basic.png?raw=true)
+
 ---
 
 ## 여러 행을 가진 flex 컨테이너
 
 기본적으로 `display:flex`는 한줄로 출력이 이루어지고 크기보다 브라우저 크기가 줄어들게 되면 비율에 맞게 안에 영역이 줄어들게 된다.(위의 기본속성에 적혀있음)
 
-사진
+![row-reverse](https://github.com/SeonHyungJo/CSS_Flex/blob/flex/src/img/nowrap.png?raw=true)
 
 그러나 `item`들의 크기를 유지하면서 여러줄로 표현을 하고 싶을때가 있다. 그래서 옵션으로 주게 된다.
 
@@ -67,7 +72,7 @@ CSS Flex 공부하기
     flex-wrap : wrap;
 ```
 
-사진
+![row-reverse](https://github.com/SeonHyungJo/CSS_Flex/blob/flex/src/img/wrap.png?raw=true)
 
 ---
 
@@ -89,7 +94,7 @@ flex 항목에 적용할 수 있는 속성은 다음과 같습니다.
 
 ### flex-basis 속성
 
-사진 row
+![flex_basic](https://github.com/SeonHyungJo/CSS_Flex/blob/flex/src/img/flex_basic.png?raw=true)
 
 `flex-basis` 속성은 항목의 크기를 결정합니다. 이 속성의 기본값은 `auto`이며, 이 경우 브라우저는 항목이 크기를 갖는지 확인합니다. 위의 사진 예시의 경우 항목의 크기가 `300` 픽셀이므로 `flex-basis`의 값으로 `300` 픽셀이 사용됩니다.
 
@@ -101,9 +106,11 @@ flex 항목에 적용할 수 있는 속성은 다음과 같습니다.
 
 `flex-grow`의 값을 양수로 설정하면 `flex` 항목은 주축을 따라서 `flex-basis` 값 이상으로 늘어나게 됩니다. 위의 사진 예시에서 모든 항목의 `flex-grow` 값을 `1`로 설정하면 사용가능한 공간은 각 항목에게 동일하게 분배되며, 각 항목은 주축을 따라 분배받은 값만큼 사이즈를 늘려 공간을 차지합니다.
 
-사진 flex_grow_1
+![flex_grow_01](https://github.com/SeonHyungJo/CSS_Flex/blob/flex/src/img/flex_grow_1.png?raw=true)
 
 세번째 항목의 `flex-grow` 값을 `2`로 설정하고 나머지 3개의 항목을 `1`로 설정한다면 각 항목에 설정된 `flex-grow` 값의 비율에 따라 남은 공간이 분배됩니다. 각 항목의 `flex-grow` 비율이 `1:1:2:1`이 된다.
+
+![flex_grow](https://github.com/SeonHyungJo/CSS_Flex/blob/flex/src/img/flex_grow.png?raw=true)
 
 ---
 
@@ -115,6 +122,9 @@ flex 항목에 적용할 수 있는 속성은 다음과 같습니다.
 
 위의 예제는 컨테이너를 `500px`로 설정을 하고 하위 `item`들을 `120px`로 설정하되 5,6 번을 `flex-shrink:3`을 설정하였다. 즉 설정한 너비보다 안에 내용물이 더 크다면 비율에 맞게 줄이되 `flex-shrink`에 맞춰서 하는 것이다.
 
+![flex_shrink](https://github.com/SeonHyungJo/CSS_Flex/blob/flex/src/img/flex_shrink.png?raw=true)
+
+---
 
 ### 위의 3개의 항목 축약표현
 
