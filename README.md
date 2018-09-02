@@ -140,7 +140,7 @@ flex 항목에 적용할 수 있는 속성은 다음과 같습니다.
 2. flex-end : main end에 위치
 3. center : 중앙정렬
 4. space-between : 시작선과 끝선에 margin을 주지 않고 일정하게 정렬
-5. space-space : item간에 **절반씩** 같은 크기의 margin을 준다.
+5. space-around : item간에 **절반씩** 같은 크기의 margin을 준다.
 6. space-evenly : item간에 같은 크기의 margin을 준다.
 
 이후 사진 추가 6개
@@ -170,7 +170,7 @@ flex 항목에 적용할 수 있는 속성은 다음과 같습니다.
 3. center : 중앙정렬
 4. stretch : cross start에서 cross end까지 길게 늘린다.
 5. space-between : 시작선과 끝선에 margin을 주지 않고 일정하게 정렬
-6. space-space : item간에 **절반씩** 같은 크기의 margin을 준다.
+6. space-around : item간에 **절반씩** 같은 크기의 margin을 준다.
 
 ## align-self
 
