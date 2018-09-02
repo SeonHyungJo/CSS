@@ -56,7 +56,7 @@ CSS Flex 공부하기
 - `flex-basis` 속성은 `auto`로 지정됩니다.
 - `flex-wrap` 속성은 `nowrap`으로 지정됩니다.
 
-![row-reverse](https://github.com/SeonHyungJo/CSS_Flex/blob/flex/src/img/flex_basic.png?raw=true)
+![flex_basic](https://github.com/SeonHyungJo/CSS_Flex/blob/flex/src/img/flex_basic.png?raw=true)
 
 ---
 
@@ -64,7 +64,7 @@ CSS Flex 공부하기
 
 기본적으로 `display:flex`는 한줄로 출력이 이루어지고 크기보다 브라우저 크기가 줄어들게 되면 비율에 맞게 안에 영역이 줄어들게 된다.(위의 기본속성에 적혀있음)
 
-![row-reverse](https://github.com/SeonHyungJo/CSS_Flex/blob/flex/src/img/nowrap.png?raw=true)
+![noWrap](https://github.com/SeonHyungJo/CSS_Flex/blob/flex/src/img/nowrap.png?raw=true)
 
 그러나 `item`들의 크기를 유지하면서 여러줄로 표현을 하고 싶을때가 있다. 그래서 옵션으로 주게 된다.
 
@@ -72,7 +72,7 @@ CSS Flex 공부하기
     flex-wrap : wrap;
 ```
 
-![row-reverse](https://github.com/SeonHyungJo/CSS_Flex/blob/flex/src/img/wrap.png?raw=true)
+![wrap](https://github.com/SeonHyungJo/CSS_Flex/blob/flex/src/img/wrap.png?raw=true)
 
 ---
 
@@ -153,7 +153,7 @@ flex 항목에 적용할 수 있는 속성은 다음과 같습니다.
 5. space-around : item간에 **절반씩** 같은 크기의 margin을 준다.
 6. space-evenly : item간에 같은 크기의 margin을 준다.
 
-이후 사진 추가 6개
+![justify_content](https://github.com/SeonHyungJo/CSS_Flex/blob/flex/src/img/justify_content.png?raw=true)
 
 ## align-items
 
@@ -165,6 +165,8 @@ flex 항목에 적용할 수 있는 속성은 다음과 같습니다.
 3. center : 중앙정렬
 4. stretch : cross start에서 cross end까지 길게 늘린다.
 5. baseline : text 하위 라인을 기준으로 정렬
+
+![align_items](https://github.com/SeonHyungJo/CSS_Flex/blob/flex/src/img/align_items.png?raw=true)
 
 ## align-content
 
@@ -182,6 +184,8 @@ flex 항목에 적용할 수 있는 속성은 다음과 같습니다.
 5. space-between : 시작선과 끝선에 margin을 주지 않고 일정하게 정렬
 6. space-around : item간에 **절반씩** 같은 크기의 margin을 준다.
 
+![align_content](https://github.com/SeonHyungJo/CSS_Flex/blob/flex/src/img/align_content.png?raw=true)
+
 ## align-self
 
 `items`에 선언하는 `property`로써 `Cross Axis`가 기준이 된다.
@@ -193,11 +197,15 @@ flex 항목에 적용할 수 있는 속성은 다음과 같습니다.
 4. stretch : cross start에서 cross end까지 길게 늘린다.
 5. baseline : text 하위 라인을 기준으로 정렬
 
+![align_self](https://github.com/SeonHyungJo/CSS_Flex/blob/flex/src/img/align-self.png?raw=true)
+
 ## order
 
 `order` 속성은 배치 순서를 제어하는 속성입니다.
 
 기본값은 `0`이며 `flex-direction` 속성의 방향을 기준으로 낮은 숫자를 먼저 배치하고 높은 숫자를 나중에 배치합니다.
+
+![order](https://github.com/SeonHyungJo/CSS_Flex/blob/flex/src/img/order.png?raw=true)
 
 ---
 
