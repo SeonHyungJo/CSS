@@ -9,14 +9,14 @@
 <style>
     .container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr 2fr);
-        grid-template-rows: 1fr 2fr;
+        grid-auto-rows: 200px;
         height: 100%;
+        background-color: darkcyan;
+        grid: 1fr 1fr 1fr / auto-flow
     }
 
     .item {
         border: 1px solid #ffffff;
-        background-color: darkcyan;
         color: white;
         font-weight: 800;
     }
