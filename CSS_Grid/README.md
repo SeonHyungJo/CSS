@@ -80,7 +80,7 @@ grid-column-start : 1;
 grid-column-end : 3;
 grid-row : 1 / 3;
 grid-column : 1 / 3;
-grid-area : 2 / 1 / 2 / 4; // (rowS / colS / rowF / colF)
+grid-area : 2 / 1 / 2 / 4; // (rowS / colS / rowE / colE)
 
 ```
 
@@ -106,7 +106,105 @@ grid-gap : 10px 20px; // row / col
 
 ## Justify
 
+### justify-items
+
+Flex에서는 주축과 교차축으로 justify-content와 align-items를 사용하고 있다. Grid에서는 앞에서 언급한 속성과 비슷한 역할을 하는 것으로 `justify-items`와 `align-items`가 있다고 할 수 있다 그러나 Grid안에 영역을 설정한다는 생각을 하면 된다.
+
+- auto
+- normal
+- start
+- end
+- center
+- stretch
+- baseline
+- first baseline
+- last baseline
+
+---
+
+### justify-self
+
+전체 역역을 컨트롤하는 것이 아닌 개개의 영역을 설정할 때 사용한다.
+
+- auto
+- normal
+- start
+- end
+- center
+- stretch
+- baseline
+- first baseline
+- last baseline
+
+---
+
+### justify-content
+
+Grid 영역 중 높이 영역이 남는 영역이 존재하는 경우 위치를 조정할 수 있다.
+
+- auto
+- normal
+- start
+- end
+- center
+- stretch
+- baseline
+- first baseline
+- last baseline
+
 ## Align
+
+### align-items
+
+Grid 안에 영역들의 `block-axis` 위치를 정하는 속성이다.
+
+- auto
+- normal
+- start
+- end
+- center
+- stretch
+- baseline
+- first baseline
+- last baseline
+
+위의 기본적인 속성값은 Flex와 비슷하다.
+Grid안에 내역들의 위치값을 조정이 가능해졌다.
+
+---
+
+### align-self
+
+이 시점에서 나오면 좋은것이 `align-self`인 것 같다.
+`align-items`는 Grid에 안에 속한 모든 것들을 컨트롤 하는 반면 self는 말그대로 해당 영역만 설정을 진행한다.
+
+- auto
+- normal
+- start
+- end
+- center
+- stretch
+- baseline
+- first baseline
+- last baseline
+
+---
+
+### align-content
+
+Grid 영역 중 너비 영역이 남는 영역이 존재하는 경우 위치를 조정할 수 있다.
+
+- normal
+- start
+- end
+- center
+- stretch
+- space-around **
+- space-between **
+- space-evenly **
+- baseline
+- first baseline
+- last baseline
 
 ---
 
