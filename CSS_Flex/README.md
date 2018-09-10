@@ -24,13 +24,13 @@ CSS Flex 공부하기
 
 `row`, `row-reverse`의 경우는 수직이 교차축이며, `column`, `column-reverse` 의 경우는 수평이 교차축에 해당하게 된다.
 
-![row](https://github.com/SeonHyungJo/CSS_Flex/blob/master/src/img/direction_row.png?raw=true)
+![row](https://github.com/SeonHyungJo/CSS/blob/master/CSS_Flex/src/img/direction_row.png?raw=true)
 
-![row-reverse](https://github.com/SeonHyungJo/CSS_Flex/blob/master/src/img/direction_row_reverse.png?raw=true)
+![row-reverse](https://github.com/SeonHyungJo/CSS_Flex/blob/master/CSS_Flex/src/img/direction_row_reverse.png?raw=true)
 
-![column](https://github.com/SeonHyungJo/CSS_Flex/blob/master/src/img/direction_column.png?raw=true)
+![column](https://github.com/SeonHyungJo/CSS_Flex/blob/master/CSS_Flex/src/img/direction_column.png?raw=true)
 
-![column-reverse](https://github.com/SeonHyungJo/CSS_Flex/blob/master/src/img/direction_colomn_reverse.png?raw=true)
+![column-reverse](https://github.com/SeonHyungJo/CSS_Flex/blob/master/CSS_Flex/src/img/direction_colomn_reverse.png?raw=true)
 
 ---
 
@@ -56,7 +56,7 @@ CSS Flex 공부하기
 - `flex-basis` 속성은 `auto`로 지정됩니다.
 - `flex-wrap` 속성은 `nowrap`으로 지정됩니다.
 
-![flex_basic](https://github.com/SeonHyungJo/CSS_Flex/blob/master/src/img/flex_basic.png?raw=true)
+![flex_basic](https://github.com/SeonHyungJo/CSS_Flex/blob/master/CSS_Flex/src/img/flex_basic.png?raw=true)
 
 ---
 
@@ -64,7 +64,7 @@ CSS Flex 공부하기
 
 기본적으로 `display:flex`는 한줄로 출력이 이루어지고 크기보다 브라우저 크기가 줄어들게 되면 비율에 맞게 안에 영역이 줄어들게 된다.(위의 기본속성에 적혀있음)
 
-![noWrap](https://github.com/SeonHyungJo/CSS_Flex/blob/master/src/img/nowrap.png?raw=true)
+![noWrap](https://github.com/SeonHyungJo/CSS_Flex/blob/master/CSS_Flex/src/img/nowrap.png?raw=true)
 
 그러나 `item`들의 크기를 유지하면서 여러줄로 표현을 하고 싶을때가 있다. 그래서 옵션으로 주게 된다.
 
@@ -72,7 +72,7 @@ CSS Flex 공부하기
     flex-wrap : wrap;
 ```
 
-![wrap](https://github.com/SeonHyungJo/CSS_Flex/blob/master/src/img/wrap.png?raw=true)
+![wrap](https://github.com/SeonHyungJo/CSS_Flex/blob/master/CSS_Flex/src/img/wrap.png?raw=true)
 
 ---
 
@@ -94,7 +94,7 @@ flex 항목에 적용할 수 있는 속성은 다음과 같습니다.
 
 ### flex-basis 속성
 
-![flex_basic](https://github.com/SeonHyungJo/CSS_Flex/blob/master/src/img/flex_basic.png?raw=true)
+![flex_basic](https://github.com/SeonHyungJo/CSS_Flex/blob/master/CSS_Flex/src/img/flex_basic.png?raw=true)
 
 `flex-basis` 속성은 항목의 크기를 결정합니다. 이 속성의 기본값은 `auto`이며, 이 경우 브라우저는 항목이 크기를 갖는지 확인합니다. 위의 사진 예시의 경우 항목의 크기가 `300` 픽셀이므로 `flex-basis`의 값으로 `300` 픽셀이 사용됩니다.
 
@@ -106,11 +106,11 @@ flex 항목에 적용할 수 있는 속성은 다음과 같습니다.
 
 `flex-grow`의 값을 양수로 설정하면 `flex` 항목은 주축을 따라서 `flex-basis` 값 이상으로 늘어나게 됩니다. 위의 사진 예시에서 모든 항목의 `flex-grow` 값을 `1`로 설정하면 사용가능한 공간은 각 항목에게 동일하게 분배되며, 각 항목은 주축을 따라 분배받은 값만큼 사이즈를 늘려 공간을 차지합니다.
 
-![flex_grow_01](https://github.com/SeonHyungJo/CSS_Flex/blob/master/src/img/flex_grow_1.png?raw=true)
+![flex_grow_01](https://github.com/SeonHyungJo/CSS_Flex/blob/master/CSS_Flex/src/img/flex_grow_1.png?raw=true)
 
 세번째 항목의 `flex-grow` 값을 `2`로 설정하고 나머지 3개의 항목을 `1`로 설정한다면 각 항목에 설정된 `flex-grow` 값의 비율에 따라 남은 공간이 분배됩니다. 각 항목의 `flex-grow` 비율이 `1:1:2:1`이 된다.
 
-![flex_grow](https://github.com/SeonHyungJo/CSS_Flex/blob/master/src/img/flex_grow.png?raw=true)
+![flex_grow](https://github.com/SeonHyungJo/CSS_Flex/blob/master/CSS_Flex/src/img/flex_grow.png?raw=true)
 
 ---
 
@@ -122,7 +122,7 @@ flex 항목에 적용할 수 있는 속성은 다음과 같습니다.
 
 위의 예제는 컨테이너를 `500px`로 설정을 하고 하위 `item`들을 `120px`로 설정하되 5,6 번을 `flex-shrink:3`을 설정하였다. 즉 설정한 너비보다 안에 내용물이 더 크다면 비율에 맞게 줄이되 `flex-shrink`에 맞춰서 하는 것이다.
 
-![flex_shrink](https://github.com/SeonHyungJo/CSS_Flex/blob/master/src/img/flex_shrink.png?raw=true)
+![flex_shrink](https://github.com/SeonHyungJo/CSS_Flex/blob/master/CSS_Flex/src/img/flex_shrink.png?raw=true)
 
 ---
 
@@ -153,7 +153,7 @@ flex 항목에 적용할 수 있는 속성은 다음과 같습니다.
 5. space-around : item간에 **절반씩** 같은 크기의 margin을 준다.
 6. space-evenly : item간에 같은 크기의 margin을 준다.
 
-![justify_content](https://github.com/SeonHyungJo/CSS_Flex/blob/master/src/img/justify_content.png?raw=true)
+![justify_content](https://github.com/SeonHyungJo/CSS_Flex/blob/master/CSS_Flex/src/img/justify_content.png?raw=true)
 
 ## align-items
 
@@ -166,7 +166,7 @@ flex 항목에 적용할 수 있는 속성은 다음과 같습니다.
 4. stretch : cross start에서 cross end까지 길게 늘린다.
 5. baseline : text 하위 라인을 기준으로 정렬
 
-![align_items](https://github.com/SeonHyungJo/CSS_Flex/blob/master/src/img/align_items.png?raw=true)
+![align_items](https://github.com/SeonHyungJo/CSS_Flex/blob/master/CSS_Flex/src/img/align_items.png?raw=true)
 
 ## align-content
 
@@ -184,7 +184,7 @@ flex 항목에 적용할 수 있는 속성은 다음과 같습니다.
 5. space-between : 시작선과 끝선에 margin을 주지 않고 일정하게 정렬
 6. space-around : item간에 **절반씩** 같은 크기의 margin을 준다.
 
-![align_content](https://github.com/SeonHyungJo/CSS_Flex/blob/master/src/img/align_content.png?raw=true)
+![align_content](https://github.com/SeonHyungJo/CSS_Flex/blob/master/CSS_Flex/src/img/align_content.png?raw=true)
 
 ## align-self
 
@@ -197,7 +197,7 @@ flex 항목에 적용할 수 있는 속성은 다음과 같습니다.
 4. stretch : cross start에서 cross end까지 길게 늘린다.
 5. baseline : text 하위 라인을 기준으로 정렬
 
-![align_self](https://github.com/SeonHyungJo/CSS_Flex/blob/master/src/img/align-self.png?raw=true)
+![align_self](https://github.com/SeonHyungJo/CSS_Flex/blob/master/CSS_Flex/src/img/align-self.png?raw=true)
 
 ## order
 
@@ -205,7 +205,7 @@ flex 항목에 적용할 수 있는 속성은 다음과 같습니다.
 
 기본값은 `0`이며 `flex-direction` 속성의 방향을 기준으로 낮은 숫자를 먼저 배치하고 높은 숫자를 나중에 배치합니다.
 
-![order](https://github.com/SeonHyungJo/CSS_Flex/blob/master/src/img/order.png?raw=true)
+![order](https://github.com/SeonHyungJo/CSS_Flex/blob/master/CSS_Flex/src/img/order.png?raw=true)
 
 ---
 
