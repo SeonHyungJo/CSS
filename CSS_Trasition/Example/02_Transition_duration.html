@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        position: relative;
+        /* 변경이 이루어질 속성 Start */
+        width: 100%;
+        height: 300px;
+        font-size: 14px;
+        background-color: beige;
+        /* 변경이 이루어질 속성 End */
+        transition-property: font-size height;
+        transition-duration: 1s;
+    }
+
+    .container:hover {
+        font-size: 36px;
+        height: 500px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        transition-property: font-size height;<br>
+        transition-duration: 1s;
+    </div>
+</body>
+
+</html>

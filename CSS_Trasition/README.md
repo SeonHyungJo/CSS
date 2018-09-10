@@ -17,6 +17,8 @@ transition-property: background-color;
 
 ```
 
+---
+
 ## transition-duration
 
 트랜지션이 일어나는 지속 시간을 명시합니다. 트랜지션 동안 모든 속성에 적용하는 단일 지속 시간을 명시하거나, 다른 주기로 각 속성이 트랜지션하게 하는 여러 지속 시간을 명시할 수 있습니다.
@@ -31,6 +33,8 @@ transition-duration: 4s;
 ```
 
 초가 작을 수록 빠르게 진행이 이루어진다.
+
+---
 
 ## transition-timing-function
 
@@ -69,6 +73,8 @@ transition-timing-function: unset;
 
 ```
 
+---
+
 ## transition-delay
 
 속성이 변한 시점과 트랜지션이 실제로 시작하는 사이에 기다리는 시간을 정의합니다.
@@ -83,6 +89,27 @@ transition-delay: 4s
 ```
 
 초가 길어질수록 반응하는데 기다리는 시간이 길어진다.
+
+---
+
+## Transition shorthand
+
+```
+
+transition-delay: 0s
+transition-duration: 0s
+transition-property: all
+transition-timing-function: ease
+
+/* property name | duration | timing function | delay */
+transition: margin-left 4s ease-in-out 1s;
+
+```
+
+위에 처럼 한줄로 표현이 가능하다.
+순서는 지켜주셔야합니다.
+
+---
 
 ## 참고
 
