@@ -1,7 +1,7 @@
 # :muscle: CSS_Grid
 </br>
 
-![Main_pic](https://https://github.com/SeonHyungJo/CSS/blob/master/assets/image/CSS_Grid.png?raw=true)
+![Main_pic](https://github.com/SeonHyungJo/CSS/blob/master/assets/image/CSS_Grid.png?raw=true)
 
 </br>
 </br>
