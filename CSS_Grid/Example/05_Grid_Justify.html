@@ -1,0 +1,82 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        background-color: darkcyan;
+        grid-row-gap: 20px;
+        grid-auto-columns: minmax(200px, auto);
+        justify-items: end;
+    }
+
+    .container2 {
+        display: grid;
+        height: 500px;
+        grid-column-gap: 10px;
+        background-color: rgba(21, 0, 139, 0.76);
+        grid-auto-columns: 20px;
+        grid-template-areas:
+            "a a a"
+            "b c c"
+            "b c c";
+    }
+
+    .container3 {
+        display: grid;
+        background-color: rgb(5, 139, 0);
+        grid-auto-flow: column;
+        grid-gap: 10px 20px;
+        justify-content: center;
+        grid-template-areas:
+            "a a a"
+            "b c c"
+            "b c c";
+    }
+
+    .item {
+        border: 1px solid #ffffff;
+        color: white;
+        font-weight: 800;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item" style="justify-self: start">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <div class="container2">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+    <div class="container3">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+</body>
+
+</html>

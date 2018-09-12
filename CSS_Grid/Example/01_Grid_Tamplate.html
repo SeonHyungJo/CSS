@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        height: 500px;
+        background-color: darkcyan;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+    }
+
+    .container2 {
+        display: grid;
+        height: 500px;
+        background-color: rgba(21, 0, 139, 0.76);
+        grid-template-areas:
+            "a a a"
+            "b c c"
+            "b c c";
+    }
+
+    .container3 {
+        display: grid;
+        height: 500px;
+        background-color: rgb(5, 139, 0);
+        grid-template:
+            "a a a"200px "b c c"200px "b c c"100px / 1fr 1fr 1fr;
+    }
+
+    .item {
+        border: 1px solid #ffffff;
+        color: white;
+        font-weight: 800;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <div class="container2">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+    <div class="container3">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+</body>
+
+</html>
