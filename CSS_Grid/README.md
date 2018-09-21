@@ -1,7 +1,10 @@
 # :muscle: CSS_Grid
-</br>
 
+<div align=center>
+    
 ![Main_pic](https://github.com/SeonHyungJo/CSS/blob/master/assets/image/CSS_Grid.png?raw=true)
+    
+</div>
 
 </br>
 </br>
