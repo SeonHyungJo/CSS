@@ -32,7 +32,9 @@ CSS 정리하기
 </br>
 </br>
 
-## :boom: Chapter 4 Table(진행중)
+## :boom: Chapter 4 Table(진행예정)
+
+## :boom: Chapter 5 Animation(진행예정)
 
 
 ---
