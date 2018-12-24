@@ -1,18 +1,15 @@
-CSS 정리하기
-===
+# CSS 정리하기
 
 ## :one: Chapter 1 Flex
 
 간단하게 상하좌우를 같은 비율을 유지하면서 배치를 할 수 있으며, 브라우저 크기에도 **반응형**으로 변화를 하여 반응형에 사용되지 좋을 것으로 생각이 된다.
-
-</br>
+<br/>
 
 그러나 `Repaint`가 일어나서 성능에 안좋다는 글도 있다.
 
 :arrow_forward: [바로 이동하기](https://github.com/SeonHyungJo/CSS/blob/master/CSS_Flex/README.md)
 
-</br>
-</br>
+<br/>
 
 ## :two: Chapter 2 Grid
 
@@ -20,8 +17,7 @@ CSS 정리하기
 
 :arrow_forward: [바로 이동하기](https://github.com/SeonHyungJo/CSS/blob/master/CSS_Grid/README.md)
 
-</br>
-</br>
+<br/>
 
 ## :three: Chapter 3 Transition
 
@@ -29,17 +25,22 @@ CSS 정리하기
 
 :arrow_forward: [바로 이동하기](https://github.com/SeonHyungJo/CSS/tree/master/CSS_Transition)
 
-</br>
-</br>
+<br/>
 
-## :boom: Chapter 4 Table(진행예정)
+## :four: Chapter 4 Table
+
+3개월만에 드디어 다시 CSS를 잡아보았다. 예전이나 지금도 사용하는 분들이 많은 것으로 알고 있는 Table에 관해서 간단하게 나마 해보면서 정리를 해보았다.
+
+:arrow_forward: [바로 이동하기](https://github.com/SeonHyungJo/CSS/tree/master/CSS_Table)
+
+<br/>
 
 ## :boom: Chapter 5 Animation(진행예정)
 
 
 ---
 
-## 참조
+#### Reference
 
 - [이모지 CheatSheet](https://gist.github.com/rxaviers/7360908)
 
