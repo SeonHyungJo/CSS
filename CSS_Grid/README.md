@@ -1,4 +1,4 @@
-# :muscle: CSS_Grid
+# :muscle: CSS Grid
 
 <div align=center>
     
@@ -6,8 +6,6 @@
     
 </div>
 
-</br>
-</br>
 
 ## :speech_balloon: Contents
 
@@ -21,7 +19,6 @@
     - [Justify](#Justify)
     - [Align](#Align)
 
-</br>
 </br>
 
 ## :mag_right: Basic
@@ -45,8 +42,7 @@ Grid는 크게
 
 :point_right: Example
 
-```
-
+```css
 grid-template-columns : repeat(3, 1fr) 1fr
 grid-template-rows : 1fr 2fr 1fr
 grid-template-areas :  
@@ -57,18 +53,15 @@ grid-template :
             "a a a" 40px
             "b c c" 40px
             "b c c" 40px / 1fr 1fr 1fr;
-
 ```
 
 위에 열과 행의 너비, 높이를 설정하는데에서 `fr` 이라는 비율인자를 사용하거나 `repeat()` 함수를 사용해서 반복적인 작업을 쉽게 나타낼 수 있다.
-
-</br>
 </br>
 
 ### grid-auto-*
 
 너비나 높이가 설정되지 않은 곳의 Item의 **기본값**을 설정한다.
-</br>
+
 :unamused: 단 같은 방향의 `Tamplate`가 설정 되어있으면 안된다.
 
 - grid-auto-columns
@@ -82,22 +75,19 @@ grid-template :
 
 :point_right: Example
 
-```
-
+```css
 grid-auto-columns : min-content;
 grid-auto-rows : minmax(10px, auto);
 grid-auto-flow : row dense;
 grid : auto-flow / 1fr 1fr 1fr;
-
 ```
 
-:star: :star: 위에서 나온 `minmax()`, `min-content`, `dense`는
+:star: 위에서 나온 `minmax()`, `min-content`, `dense`는
 
 - `minmax()` : 최소크기, 최대크기 설정
 - `min-content` : 컨텐츠의 최소크기로 설정
 - `dense` : 공간이 비는 곳이 없도록 채우면서 정렬
 
-</br>
 </br>
 
 ### Merge
@@ -114,17 +104,14 @@ grid : auto-flow / 1fr 1fr 1fr;
 
 시작점이 `1` 끝점이 `3`이 되는 것이다.
 
-```
-
+```css
 grid-column-start : 1;
 grid-column-end : 3;
-
 ```
 
 :point_right: Example
 
-```
-
+```css
 grid-row-start : 1;
 grid-row-end : 3;
 grid-column-start : 1;
@@ -132,10 +119,8 @@ grid-column-end : 3;
 grid-row : 1 / 3;
 grid-column : 1 / 3;
 grid-area : 2 / 1 / 2 / 4; // (rowS / colS / rowE / colE)
-
 ```
 
-</br>
 </br>
 
 ## Space between boxs
@@ -148,26 +133,19 @@ Grid-items간의 공간을 주고 싶다면 이것을 사용하면 된다.
 
 :point_right: Example
 
-```
-
+```css
 grid-row-gap : 20px;
 grid-column-gap : 10px;
 grid-gap : 10px 20px; // row / col
-
 ```
 
 </br> 
-</br> 
-
----
 
 ## :mag_right: Advanced
 
 Flex에서는 주축과 교차축으로 justify-content와 align-items를 사용하여 좌우 위아래 item의 위치를 설정했다.
-</br>
-Grid에서는 앞에서 언급한 속성과 비슷한 역할을 하는 것으로 `Justify`와 `Align`가 있다고 할 수 있다.
 
-</br> 
+Grid에서는 앞에서 언급한 속성과 비슷한 역할을 하는 것으로 `Justify`와 `Align`가 있다고 할 수 있다.
 </br> 
 
 ### Justify
@@ -190,15 +168,12 @@ Item의 영역에서 Item의 위치를 설정한다.
 
 :point_right: Example
 
-```
-
+```css
 justify-items : start;
 justify-items : auto;
 justify-items : stretch;
-
 ```
 
-</br>
 </br>
 
 ### justify-self
@@ -217,15 +192,12 @@ justify-items : stretch;
 
 :point_right: Example
 
-```
-
+```css
 justify-self : start;
 justify-self : auto;
 justify-self : stretch;
-
 ```
 
-</br>
 </br>
 
 ### justify-content
@@ -244,15 +216,12 @@ Grid 영역 중 높이 영역이 남는 영역이 존재하는 경우 위치를 
 
 :point_right: Example
 
-```
-
+```css
 justify-content : start;
 justify-content : auto;
 justify-content : stretch;
-
 ```
 
-</br>
 </br>
 
 ## Align
@@ -278,15 +247,12 @@ Grid안에 내역들의 위치값을 조정이 가능해졌다.
 
 :point_right: Example
 
-```
-
+```css
 align-items : start;
 align-items : auto;
 align-items : stretch;
-
 ```
 
-</br>
 </br>
 
 ### align-self
@@ -305,15 +271,12 @@ align-items : stretch;
 
 :point_right: Example
 
-```
-
+```css
 align-self : start;
 align-self : auto;
 align-self : stretch;
-
 ```
 
-</br>
 </br>
 
 ### align-content
@@ -334,19 +297,17 @@ Grid 영역 중 너비 영역이 남는 영역이 존재하는 경우 위치를 
 
 :point_right: Example
 
-```
-
+```css
 align-content : start;
 align-content : auto;
 align-content : stretch;
-
 ```
 
 </br>
-</br>
 
-## 참고사이트
+---
+
+#### Reference
 
 - [MDN-Grid](https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Grid_Layout)
-
 - [MDN-box alignment](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout)
