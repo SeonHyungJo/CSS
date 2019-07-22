@@ -35,7 +35,11 @@
 
 <br/>
 
-## :five: Chapter 5 Animation(진행중)
+## :five: Chapter 5 Animation
+
+드디어 작년 FEConf후에 한번 정리를 해보자 했던 애니메이션을 추가하였습니다. 아직은 전부를 정리하지 못하여 추가 수정 예정입니다.
+
+:arrow_forward: [바로 이동하기](https://github.com/SeonHyungJo/CSS/tree/master/CSS_Animation)
 
 
 ---
